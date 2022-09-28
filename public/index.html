@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta
+            name="description"
+            content="Chat application with Redux toolkit and RTK Query"
+        />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.2/socket.io.min.js"
+            integrity="sha512-xzC4RSo+4m1clLhr0pQr6yFjO9bJ0py6+l65SBibI8/pSEU8U4iVZ7xm95WRq8PXw2MKv8SSR3QkqR2jciG5Ug=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <title>React-Redux-RTK Query: Chat Application</title>
+        <style>
+            /* Scrollbar width */
+            .content-wrapper .padding_15 {
+              height: calc(100vh - (3.5rem + 1px));
+              overflow-x: hidden;
+              overflow-y: initial;
+            }
+            ::-webkit-scrollbar {
+              width: 5px !important;
+              height: 5px !important;
+            }
+
+            /* Scrollbar Track */
+            ::-webkit-scrollbar-track {
+              box-shadow: inset 0 0 5px rgb(51, 51, 51);
+            }
+
+            /* Scrollbar Handle */
+            ::-webkit-scrollbar-thumb {
+              background: #071d2b;
+              border-radius: 10px;
+            }
+
+            /* Scrollbar Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+              background: #072436;
+            }
+
+            #scrollableDiv .infinite-scroll-component::-webkit-scrollbar {
+              display: none;
+            }
+            #scrollableDiv .infinite-scroll-component{
+              -ms-overflow-style: none;  /* IE and Edge */
+              scrollbar-width: none;  /* Firefox */
+            }
+        </style>
+    </head>
+    <body class="bg-slate-700" style="background: rgb(51 65 85); color:#fff">
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+        <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    --></body>
+</html>
